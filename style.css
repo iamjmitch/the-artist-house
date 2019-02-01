@@ -1,0 +1,799 @@
+/* --------Made by James Mitchell -S/N:3101418618--------------------------------- */
+/* ---- Global settings-------------------------- */
+
+body {
+	background-color: #20221B;
+}
+a { /* Global "a" properties */
+	color: #4478E3 !important;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-transform: capitalize !important;
+}
+a:hover { /* Global "a:hover" properties */
+	color: #4478E3 !important;
+	text-decoration: underline !important;
+}
+a:visited { /* Global "a:hover" properties */
+	color: #FF795F !important;
+}
+a:active { /* Global "a:active" properties */
+	color: #000000 !important;
+}
+h2 { /* Global "h2" properties */
+	color: #4478e3  !important;
+	font-size: 16pt;
+	text-transform: capitalize;
+}
+h1 { /* Global "h1" properties */
+	color: #1F4FB2 !important;
+	text-transform: lowercase;
+	text-decoration: underline;
+	font-size: 24pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+p { /* Global "p" properties (paragraph text) */
+	text-transform: capitalize;
+	color: #000000 !important;
+	font-size: 12pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif !important;
+}
+
+td { /* Global table properties */
+	color: #000000 !important;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+}
+
+textarea { /* removes ability to resize textarea boxes */
+	resize: none;
+}
+
+/* ----End Global settings------------------------ */
+
+/* ----Header CSS--------------------------------- */
+
+#logotop { /* Allows header to be 100% of screen */
+	width: 100%;
+	height: 185px;
+	background-color: #4478E3;
+	overflow: hidden;
+}
+#logocontainer { /* Contains logo and text to 960px */
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #4478E3;
+
+}
+.logo { /* logo properties */
+	height: 135px;
+	padding: 25px 20px 25px 0;
+}
+#header { /* puts logo on right of container div */
+	float: right;
+}
+#headerinfo { /* puts address on right of container next to logo */
+	padding: 40px 10px 30px 0;
+	height: 125px;
+	margin-left: 0;
+	padding-left: 0;
+	float: right;
+	overflow: hidden;
+}
+#headerinfo strong { /* "the Artist House" header text styler */
+	font-weight: 700;
+}
+#headerinfo p { /* Address Properties */
+	color: #ffffff !important;
+	text-decoration: none;
+	text-transform: capitalize;
+	padding-left: 20px;
+	font-size: 12px;
+	text-align: left;
+}
+
+#headerinfo a { /* removes any text decoration from the email address */
+	color: #ffffff !important;
+	text-decoration: none;
+	text-transform: capitalize;
+	padding-left: 20px;
+	font-size: 12px;
+	text-align: left;
+}
+/* --------End Header CSS--------------------------------- */
+
+/* --------Navigation CSS--------------------------------- */
+
+#navfull { /* allows nav bar to go 100% of screen */
+	background-color: #ffffff;
+	width: 100%;
+	clear: both;
+}
+#navcontainer { /* contains nav text to 960px */
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#nav { /* navbar properties */
+	background-color: #ffffff;
+	width: 100%;
+	margin: 0 0 5px 0;
+	padding-bottom: 2px;
+	}
+#nav tr { /* removes any styling from nav bar text */
+	list-style: none;
+	height: 0px;
+	margin-right: 15px;
+	text-align: center;
+}
+
+#nav th { /* aligns nav bar horizontally not vertically */
+	display: inline-block;
+	text-decoration: none;
+	padding: 4px 0 4px 0;
+	text-align: center;
+}
+#nav a { /* removes any text decoration from the navbar links */
+	text-decoration: none;
+	text-transform: uppercase;
+	padding-left: 20px;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+	
+/* --------End Navigation CSS--------------------------------- */
+
+/* --------Container CSS--------------------------------- */
+
+#container { /* Sets up container to 960px and sets content background */
+	background-color: #F6F6F6;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+#banner { /* Banner Properties */
+	height: 269px;
+	border-radius: 10px;
+	background-color: #F6F6F6;
+}
+#inner { /* Banner Properties Helper */
+	padding: 0 0 7px 0;
+	background-color: #F6F6F6;
+}
+
+/* --------Content CSS--------------------------------- */
+
+
+#content p { /* brings text inline with other elements */
+	padding-top: 2px;
+}
+
+#homepagetext { /* brings text inline with other elements */
+	padding-top: 7px;
+}
+#main { /* sets up a container for content that restricts the size to 64% as per requirements */
+	margin: 0 0 0 15px;
+	width: 64%;
+	float: left;
+	height: 100%;
+}
+
+#fullpagecontainer { /* Used for pages that dont have a side bar and sets content area to 100% */
+	width: 960px;
+}
+#fullpagecontainer h1 { /* page specific h1 properties */
+	margin: 0;
+	padding: 35px 0 0 20px;
+	
+}
+#fullpagecontainer p { /* page specific text properties */
+	padding: 0 20px 0 20px;
+	
+}
+
+
+/* --------End Content CSS--------------------------------- */
+
+/* --------Sidebar CSS--------------------------------- */
+
+#sidebar { /* sidebar container. sets up sidebar to 34% as required & some styling */ 
+	width: 34%;
+	float: right;
+	margin: 0 0 5px 0;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	padding-bottom: 5px;
+	padding-top: 65px;
+	
+}
+#sidebar p, a { /* sidebar text properties */
+	color: #4478E3;
+	padding-top: 7px;
+	text-decoration: none;
+	padding-left: 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+#sidebar h2 { /* sidebar h2 properties */
+	color: #4478e3 ;
+	font-weight: 200;
+	text-decoration: none;
+	padding-left: 0;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+#socialtitle { /* sidebar headings properties */
+	padding: 20px 0 20px 0;
+}
+
+#socialtitle h2 { /* sidebar h2 properties */
+	text-align: center;
+}
+
+#sidebartitle h2 { /* sidebar h2 properties */
+	text-align: center;
+}
+.sbhelper { /* this controls each individual sidebar box */
+	clear: both;
+	height: 110px;
+	border-top: 1px solid #4478E3;
+	border-right: 1px solid #4478E3;
+	border-left: 1px solid #4478E3;
+	background-color: #ffffff;
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 300px;
+}
+.sbhelper2 { /* this controls the bottom sidebar box. the div with this class requires a border-bottom where as the others dont */
+	clear: both;
+	height: 110px;
+	border-top: 1px solid #4478E3;
+	border-right: 1px solid #4478E3;
+	border-left: 1px solid #4478E3;
+	border-bottom: 1px solid #4478E3;
+	background-color: #ffffff;
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 300px;
+}
+.sbbottom { /* adds border to bottom of sidebar wrapper */
+	border-bottom: 1px solid white;
+}
+.sbhelper img { /* sidebar image controller */
+	float: left;
+	height: 70px;
+	margin: 20px 0 20px 10px;
+	clear: both;
+}
+#social-icons img { /* Social icons image controller */
+	
+	height: 29px;
+	clear: both;
+	padding: 0 10px 0 10px;
+}
+#social-icons table { /* social icons properties */
+	width: 217px;
+	margin: auto
+	
+}
+.socialicons { /* social icon image size controller */
+	height: 50px;
+}
+.sbhelper2 img {  /* sidebar image controller for last box */
+	float: left;
+	height: 70px;
+	margin: 20px 0 20px 10px;
+	clear: both;
+}
+.sidebartext {  /* sidebar text properties */
+	float: right;
+	width: 60%;
+	height: 100px;
+	padding: 0 5px 0 0;
+	text-align: center;
+}
+.sidebartext a { /* centers book now link on sidebar */
+	margin: auto;
+}
+/* --------End Sidebar CSS--------------------------------- */
+
+/* --------Footer CSS--------------------------------- */
+
+#footer { /* Footer properties */
+	clear: both;
+	padding: 5px;
+	background-color: #ffffff;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	max-width: 960px;
+	text-align: center;
+}
+#footer p { /* footer text properties */
+	color: #000000;
+	margin: 5px 5px 5px 5px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12pt;
+}
+#footer a { /* footer link properties. color marked "!important" to ensure override of global properties (Edge Browser fix) */
+	color: #4478E3 !important;
+	text-decoration: none;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 10pt;
+}
+#footer a:hover { /* footer link hover properties. color marked "!important" to ensure override of global properties (MS Edge Browser fix)*/
+	color: #000000 !important;
+}
+
+#footer p:hover { /* footer link hover properties. color marked "!important" to ensure override of global properties (MS Edge Browser fix)*/
+	color: #000000 !important;
+}
+#footer a:active { /* footer link active properties. color marked "!important" to ensure override of global properties (MS Edge Browser fix) */
+	color: #FF795F !important;
+}
+#footer a:visited { /* footer link visited properties. color marked "!important" to ensure override of global properties (MS Edge Browser fix) */
+	color: #1F4FB2 !important;
+}
+
+/* --------End Footer CSS--------------------------------- */
+
+
+/* --------Page Specific CSS--------------------------------- */
+
+/* --------Artist profile CSS--------------------------------- */
+#artistcontent { /* restricts artist info text to 64% & styling */
+	margin: 0 0 0 15px;
+	width: 64%;
+	float: right;
+	height: 100%;
+	height: 553px;
+	position: relative;
+}
+#mediawrapper { /* sidebar wrapper for artist pages */
+	padding-top: 18px;
+	width: 34%;
+	float: left;
+	background-color: #F6F6F6;
+	padding-bottom: 5px;
+	height: 530px;
+	position: relative;
+	
+}
+#artistimage img { /* artist sidebar img controller */
+	width: 300px;
+}
+#artistleft { /* left collumn of artist links */
+	width: 47.5%;
+	float: left;
+	padding: 46px 0 20px 20px
+}
+#artistright { /* right collumn of artist links  */
+	width: 47.5%;
+	float: right;
+	padding: 46px 20px 20px 0;
+}
+
+#artistimage { /* artist image controller */
+	padding-top: 0;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.artistinfotop{ /* controller the first level artist boxes. adds padding */
+	    width: 250px;
+    float: left;
+	padding: 0 0 0 15px;
+	margin-top: -7px;
+	
+}
+.artistinfotop p{ /* lines up text elements */
+	padding: 0 !important;
+}
+
+
+#artistimg { /* artist image controller */
+	width: 300px;
+}
+
+#artistmedia { /* adds padding to video to center */
+	width:300px; 
+	height:235px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.artistmedia {  /* artist video controller */
+	width:300px; 
+	height:235px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* total artist page CSS */
+.artistprofile img {  /* image controller */
+	float: left;
+	width: 147px;
+	height: 100px;
+	margin: 20px 0 20px 20px;
+	clear: both;
+}
+.artistprofile p { /* Text controller */
+	float: left;
+}
+.artistprofile { /* adds styling to page element */
+	padding-bottom: 20px;
+	position: relative;
+}
+.artist { /* controls the actual box each artist is located in */
+	border-top: 1px solid #4478E3;
+	border-bottom: 1px solid #4478E3;
+	border-right: 1px solid #4478E3;
+	border-left: 1px solid #4478E3;
+	background-color: #ffffff;
+	margin-left: 5px;
+	margin-right: 5px;
+	overflow: auto;
+	height: 145px;
+}
+.divclick { /* this overlays #artistprofile and turns the entire artist box into a clickable link */
+	position: absolute;
+	width: 446px;
+	height: 144px;
+	top: 0;
+	left: 0;
+	margin-left: 5px !important;
+	padding: 0 0 0 0 !important;
+}
+.artist:hover p { /* changes text color on hover */
+	color: white;
+}
+.artist:hover { /* changes background on hover */
+	background-color: #4478E3;
+}
+.artist:hover strong { /* changes artist name to white on hover */
+	color: white;
+}
+
+.artistprofile a { /* artist link properties */
+	color: #000000;
+	text-decoration: none;
+	text-transform: none;
+	text-align: left;
+	padding-left: 20px;
+	
+}
+.artistprofile strong { /* artist name controller */
+	color: #4478E3;
+	font-size: 1.2em;
+}
+
+#booknow { /* booknow link at bottom of page is controlled by this */
+	float: right;
+	margin: 0 0 0 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+}
+#bookingdocs {/* cooking docs link controller */
+	float: left;
+	padding: 0 0 0 20px;
+	display: block;
+	bottom: 0;
+	position: absolute;
+}
+#artistcontent h1 { /* h1 controller */
+	color: #4478E3;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+#artistcontent p { /* text controller */
+	margin-right: 20px;
+}
+
+/* --------End Artist profile CSS--------------------------------- */
+
+/* --------Booking Form CSS--------------------------------- */
+
+
+#bform { /* booking form styling */
+	margin-left: auto;
+	margin-right: auto;
+	width: 920px;
+	border: 2px solid #4478E3;
+	margin-top: 46px;
+	margin-bottom: 20px;
+	background: #ffffff;
+	overflow: auto;
+	position: relative;
+	padding: 20px 0 20px 0;
+	
+}
+legend {
+color: #ffffff;
+}
+
+fieldset {
+	border: 0;
+}
+
+.buttonlabel {
+	visibility: hidden;
+}
+#bform td { /* booking form table styling */
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 20px
+}
+.contactr { /* this creates the align:right effect seen on page */
+	text-align: right;
+	padding-right: 10px;
+	color: #4478E3;
+}
+
+#selectartist { /* select artist drop box properties */
+	width: 140px; 
+	text-align: center; 
+	font-family: Verdana,  Arial, Helvetica, sans-serif
+}
+
+.bookinginputdate { /* date input controller */
+	width: 140px; 
+	text-transform: lowercase !important;
+}
+.bookinginputtext { /* text input controller */
+	width: 140px; 
+	text-align: center; 
+	text-transform: capitalize !important;
+}
+ 
+.bookinginputphone { /* phone number controller */
+	width: 162px; 
+	text-align: center; 
+	text-transform: capitalize !important;
+	
+}
+
+.bookinginputname { /* phone number controller */
+	width: 162px; 
+	text-align: center; 
+	text-transform: capitalize !important;
+	margin-top: 13px;
+	
+}
+
+.bookingbuttons { /* submit/reset styler */
+	width:199px; 
+	height: 40px; 
+	background-color: #4478E3; 
+	border: 1px solid #000000; 
+	color: #ffffff;
+}
+
+#tdhelper { /* creates gap between name and email on page */
+	padding-left: 23px;
+}
+
+#floatleft { /* floats element left */
+	float: left;
+}
+#floatright { /* floats element right */
+	float: right;
+}
+.event { /* textarea controller */
+	vertical-align: top;
+	text-align: right;
+	padding-right: 10px;
+	color: #4478E3;
+}
+.email { /* email input box controller */
+	text-align: right;
+	padding-right: 10px;
+	color: #4478E3;
+}
+.radio { /* radio button controller */
+	vertical-align: top;
+	text-align: right;
+	padding-right: 10px;
+}
+
+
+.contacttext { /* capitalises text  */
+	text-transform: capitalize;
+}
+.select { /* artist select styler  */
+	width: 173px;
+	text-transform: capitalize;
+}
+#contacttextarea { /* contact textarea styler */
+	margin-bottom: 10px;
+	height: 200px;
+}
+#submitbutton { /* submit button styler */
+	width: 199px;
+	height: 40px;
+	background-color: #4478E3;
+	border: 1px solid #000000;
+	color: #ffffff;
+}
+#resetbutton { /* reset button styler */
+	width: 199px;
+	height: 40px;
+	background-color: #4478E3;
+	border: 1px solid #000000;
+	color: #ffffff;
+	margin-left: 30px;
+}
+#bform table { /* table styler */
+	padding-left: 20px;
+}
+#fixeddate { /* this allows the dixed date question to act freely and be placed into required position */
+	position: absolute;
+	top: 88px;
+    left: 570px;
+}
+#email { /* allows email to be positioned exatcly */
+	position: absolute;
+	top: 331px;
+	left: 512px;
+}
+
+.email-input { /* email input properties */
+width: 200px;}
+
+#bform textarea { /* textarea properties */
+	width: 465px;
+	height: 150px;
+	height: 150px;
+	text-transform: capitalize;
+}
+#bform input { /* booking form input properties */
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-transform: capitalize;
+}
+#button { /* button properties */
+	width: 400px;
+	margin-left: 355px;
+}
+
+#button table { /* styler for table that controller horizontal input buttons */
+	padding-left: 60px;
+}
+#button td { /* pushes submit button over to be inline with other elements */
+	width: 400px;
+	margin-left: 355px;
+	margin-right: auto;
+}
+
+
+/* --------End Booking Form CSS--------------------------------- */
+
+/* --------FAQ CSS--------------------------------- */
+#faqwrapper { /* Faq housing properties */
+	width: 100%;
+	margin: 5px 20px 0 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#faqwrapper h2 { /* faq h2 properties */
+	text-decoration: underline;
+	margin-top: -20px;
+}
+.question { /* this controls the box around every faq question */
+	padding: 0 10px 10px 10px;
+	margin: 15px 0 15px 0;
+	border: 1px solid #4478e3;
+	background-color: #ffffff;
+}
+/* --------End FAQ CSS--------------------------------- */
+
+/* --------Testimonial CSS--------------------------------- */
+#testimonialwrapper { /* wraps all testimonial page elements */
+	width: 100%;
+	margin: 5px 0 0 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 20px;
+}
+#testimonialwrapper h2 { /* testimonial h2 propeties  */
+	text-decoration: underline;
+	text-transform: capitalize;
+		padding: 0 0 0 0;
+	margin: 0;
+}
+#testimonialwrapper p { /* testimonial text properties */
+	padding: 0;
+}
+.testimonial { /* puts box around each testimonial and styling */
+	padding: 0 10px 10px 10px;
+	margin: 15px 0 15px 0;
+	border: 1px solid #4478e3;
+	background-color: #ffffff;
+	margin-left: 0;
+	margin-right: auto;
+}
+
+/* --------End Testimonial CSS--------------------------------- */
+
+/* --------Contact Form CSS--------------------------------- */
+
+#contactform { /* allows border around contact form and styling */
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #ffffff;
+	padding-bottom: 10px;
+	border: 1px solid #4478e3;
+	margin-bottom: 10px;
+	margin-top: 46px;
+}
+#contactwrapper { /* controls inner elements of contactform */
+	width: 450px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #ffffff;
+	padding-top: 20px;
+}
+#contactform p { /* text properties */
+	padding: 5px 5px 0 5px;
+}
+#contactwrapper p { /* text properties */
+	margin: 0 5px 0 5px;
+	color: #4478e3;
+}
+#contacttable { /* puts "preffered method of contact in horizontal line */
+	display: inline-block;
+	color: #4478e3;
+	padding: 0;
+	margin:	0;
+}
+#methodofcontact { /* styling */
+	padding-left: 8px;
+	   width: 250px;
+}
+#formbuttons2 { /* sumbit/reset button controller */
+	width: 400px;
+	margin-left: -5px;
+	padding-bottom: 10px;
+	padding-top: 20px;
+}
+#contactresetbutton { /* pushes reset button to right to line up with end of above elements */
+	padding-left: 23px;
+}
+#formbuttons2 td { /* positions buttons on page */
+	width: 400px;
+	margin-left: 323px;
+	margin-right: auto;
+}
+
+
+.email-input { /* centers text entered into email input box */
+	text-align: center;
+}
+
+/* --------End Form CSS--------------------------------- */
+
+/* --------Documents CSS--------------------------------- */
+
+#bookingdocdownload { /* download box on booking doc page. makes div look liek button */
+	width: 200px;
+	height: 51px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #4478e3;
+	margin-top: 20px;
+	text-align: center;
+	
+}
+#bookingdocdownload p { /* text properties */
+		color: #ffffff !important;
+		padding-top: 13px;
+}
+
+/* --------End Documents CSS--------------------------------- */
+
+/* --------Made by James Mitchell -S/N:3101418618--------------------------------- */

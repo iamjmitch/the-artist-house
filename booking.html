@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Made by James Mitchell -S/N:3101418618------------------>
+<head>
+	<!--Global Setup-->
+	<meta charset="utf-8">
+
+	<title>The Artist House - Booking</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!--Start Header---------------------------------------------------->
+
+
+	<div id="logotop">
+		<!--Allows Full page width background--->
+
+
+		<div id="logocontainer">
+			<!--Contains logo to 960px-->
+
+
+			<div id="header"><!--Logo Placement-->
+			<img alt="The Artist House Logo" class="logo" src="images/AH---Logo.png">
+			</div>
+
+
+			<div id="headerinfo"><!--Address Placement-->
+				<p><strong>The Artist House</strong><br>
+				81 Begley Street<br>
+				Endeaver Falls<br>
+				QLD 4895<br>
+				Ph: 07 4027 9509<br>
+				Fax: 07 4027 9510</p>
+			</div>
+			
+		</div>
+		<!--Close Logo Container-->
+	</div>
+	<!-- Close Logotop -->
+	
+<!--Close Header----------------------------------------------------->
+	
+<!--Open Navigation----------------------------------------------------->
+
+
+	<div id="navfull">
+	<!--Allows Full page width background--->
+
+
+		<div id="navcontainer">
+		<!--contains nav insides to 960px--->
+
+
+			<div id="nav">
+			<!--NavBar Headings-->
+
+
+				<nav>
+					<table>
+						<tr>
+							<th>
+								<a href="index.html">Home</a>
+							</th>
+
+							<th>
+								<a href="about.html">About</a>
+							</th>
+
+							<th>
+								<a href="artist.html">Artists</a>
+							</th>
+
+							<th>
+								<a href="testimonials.html">Testimonials</a>
+							</th>
+
+							<th>
+								<a href="faq.html">FAQ</a>
+							</th>
+
+							<th>
+								<a href="booking.html">Make A Booking</a>
+							</th>
+
+							<th>
+								<a href="contact.html">Contact</a>
+							</th>
+						</tr>
+					</table>
+				</nav>
+			</div>
+			<!--Close NavBar Headings-->
+		</div>
+		<!--Close navcontainer-->
+	</div>
+	<!--Close Navfull-->
+	
+<!--Close Navbar--------------------------------------------------->
+	
+<!--Open Content--------------------------------------------------->
+
+	<div id="container">
+		<!--restricts content to 960px-->
+
+
+
+
+<!-- Start Content ---------------------------------------------------------------------------------------------------------------------------->	
+	<div id="fullpagecontainer">
+	
+<!-- Start Main Content ---------------------------------------------------------------------------------------------------------------------------->	
+	<h1>Book an Artist</h1>
+    
+		<div id="formcontainer"><!--Form wrapper-->
+		
+		<div id="bform">
+		
+		<form name="bookings">
+		<fieldset>
+		<legend>Make a Booking</legend>
+		<div id="fixeddate"><!--Absolute positioning sets this divs position as to not effect the rest of the form-->
+				<table>
+				<tr>
+				<td class="event"><label> This date is:</label></td>
+				<td>
+				<input type="radio" name="fixedflex" id="fixed" value="Fixed" checked ><label for="fixed">Fixed</label>
+				<br>
+				<input type="radio" name="fixedflex" id="flexible" value="flexible"><label for="flexible">Flexible</label></td>
+				</tr>
+				</table>
+				</div>
+				
+				
+		
+		<table>
+			<tr>
+				<td class="contactr"><label for="selectartist">Select An Artist:</label</td><!--Drop down box-->
+				<td><select id="selectartist" name="selectartist" >
+				<option selected value="casandra_cole">Casandra Cole </option>
+				<option value="elle_taylor">Elle Taylor</option>
+				<option value="jpegs">Greg Richardsons</option>
+				<option value="jet_wallace">Jet Wallace</option>
+				<option value="norman_bradley">Norman Bradley</option>
+				<option value="piere_perry">Piere Perry</option>
+				<option value="sunshine_tunnel">Sunshine Tunnel</option>
+				</select>
+				</td>
+				</tr>
+				
+				<tr>
+				<td class="contactr"><label for="date">Select A Date</label></td><!--Select date-->
+				<td><input class="bookinginputdate" type="date" id="date" name="date"></td>
+								</tr>
+				
+				<tr>
+				<td class="contactr"><label for="datesconsec">If Consecutive Dates, Select An End Date:</label></td><!--Consecutive dates-->
+				<td><input class="bookinginputdate" type="date" id="datesconsec" name="datesconsec"></td>
+				</tr>
+				
+				<tr>
+				<td class="contactr"><label for="venue">Venue:</label></td><!--Venue input-->
+				<td><input class="bookinginputtext" type="text" id="venue" name="venue" placeholder="venue"></td>
+				</tr>
+				
+				<tr>
+				<td class="event"><label for="event">Description Of Event:</label></td><!--Description input-->
+				<td><textarea id="event" name="event" rows="4" cols="50" placeholder="Write a brief description here."></textarea></td>
+				</tr>
+				
+				<tr>
+				
+				<td class="contactr"><label for="person">Contact Person:</label></td><!--Contact person text-->
+				
+				<!--the below is done in order to have 3 elements in 2 table spots-->
+				<td><div id="floatleft"><input class="bookinginputname" type="text" name="person" id="person" placeholder="your name"></div>
+				<div id="floatright"> 
+				<Table>
+				<tr>
+				<td class="email"><label for="enteremail">Email:</label></td>
+				<td><input class="email-input" type="email" id="enteremail" name="email"  placeholder="your email"></td>			
+				</tr>
+				</table>
+				
+				</div>
+				</tr>
+				
+				<tr>
+				<td class="contactr"><label for="phone">Phone:</label></td><!--Phone-->
+				<td><input class="bookinginputphone" type="text" name="phone" id="phone"  placeholder="Your Phone Number"></td>
+				</tr>
+				
+				<tr>
+				<td class="contactr"><label for="confirm">Please Confirm The Above Information Is True:</label></td><!--Confirm input-->
+				<td><input type="checkbox" name="confirm" id="confirm" value="yes"></td>
+				</tr>
+				
+				</table>
+				
+				
+				
+				
+				<div id="button"><!--Submit & Reset buttons-->
+				<table>
+				<tr>
+				<td><input class="bookingbuttons" type="submit" name="S1" value="Submit" id="submit" ><label class="buttonlabel" for="submit">submit</label></td>
+				<td id="tdhelper"><input class="bookingbuttons" type="reset" id="reset" name="S1" value="Reset"><label class="buttonlabel" for="reset">Reset</label></td>
+				</tr>
+				</table>
+				</div>
+				
+				</form> <!--close form-->
+
+		
+		</div><!--close bookings-->
+				
+		
+		<div><!--Booking Docs-->
+		<p><a href="documents.html">Booking Documents</a></p>
+		</div>	
+		</div><!--close bform-->
+	
+			
+			
+		
+<!-- End Main Content -->
+
+
+
+
+
+<!--Start Footer-------------------------------------------------------------------->
+			
+
+			<footer>
+				
+
+				<div  id="footer">
+					<p>&copy; 2018 The Artist House<br>
+					<a href="privacy.html">Privacy Policy</a></p>
+				</div>
+				<!--Close Footer------->
+			</footer>
+		</div>
+		<!--Close Page Content------->
+	</div>
+	<!--Close Container------->
+	
+	
+<!--Made by James Mitchell -S/N:3101418618------------------>
+</body>
+</html>
